@@ -9,3 +9,8 @@ color help -
 dir /s /w - comando matrix
 alt + enter - tela cheia
 code . - abre no vscode
+touch <nome do arquivo> - cria novo arquivo no code
+
+EXTENSÕES
+
+Live Server - emula servidor web para rodar páginas html
