@@ -11,6 +11,10 @@
     
     <!-- ADICIONANDO ÍCONE NO TÍTULO DA PÁGINA -->
     <link rel="shurtcut icon" href="./img/icone.png"/>
+
+
+    <!-- CHAMANDO CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
     <!-- TÍTULO DA PÁGINA -->
     <title>Escola Dev</title>
 <!-- FINAL DO CABEÇALHO -->
@@ -19,27 +23,27 @@
 <body>
 
     <!-- TIPOS DE TITULOS DO CORPO DA PÁGINA -->
-    <h1>ESCOLA DE DESENVOLVEDORES</h1>
-    <H2>Boas-vindas à nossa Escola</H2>
-    <h3>Desenvilvedor Nível 1</h3>
-    <h4>Desenvolvedor Nível 2</h4>
-    <h5>Desenvolvedor Nível 3</h5>
-    <h6>Desenvolvedor Nível 4</h6>
+    <h1 id="titulo">ESCOLA DE DESENVOLVEDORES</h1>
+    <H2 class="subtit">Boas-vindas à nossa Escola</H2>
+    <h3 class="subtit">Desenvilvedor Nível 1</h3>
+    <h4 class="subtit">Desenvolvedor Nível 2</h4>
+    <h5 class="subtit">Desenvolvedor Nível 3</h5>
+    <h6 class="subtit">Desenvolvedor Nível 4</h6>
     <hr>
 
     <!-- PARÁGRAFOS DE TEXTO -->
-    <P>Conteúdo da primeira semana Dev</P>
-    <p>Conteúdo da segunda semana Dev</p>
-    <p>Conteúdo da terceira semana Dev</p>
+    <P class="p1">Conteúdo da primeira semana Dev</P>
+    <p class="p1">Conteúdo da segunda semana Dev</p>
+    <p class="p1">Conteúdo da terceira semana Dev</p>
     <!-- LINHA DIVISÓRIA -->
     <hr>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempore ullam nobis. Quasi, rem quibusdam asperiores veritatis voluptatibus vel deserunt architecto possimus eum at sit? Quaerat sunt corrupti vel quibusdam.</p>
+    <p class="ptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempore ullam nobis. Quasi, rem quibusdam asperiores veritatis voluptatibus vel deserunt architecto possimus eum at sit? Quaerat sunt corrupti vel quibusdam.</p>
     
     <hr>
 
     <!-- TRATAMENTO DE IMAGENS -->
-    <img src="./img/imagem1.jpg" alt="Imagem de um gato sob o por do sol" title="Gato" width="600"/>
+    <img src="./img/imagem1.jpg" alt="Imagem de um gato sob o por do sol" title="Gato" width="600" id="img1"/>
     <hr>
 
     <!-- LISTA ORDENADA -->
@@ -89,14 +93,14 @@
     <hr>
 
     <!-- FORMULÁRIO -->
-    <h2>Login Aluno</h2>
-    <form action="dados.html">
+    <h2 id="titForm">Login Aluno</h2>
+    <form action="dados.html" class="form1">
         <input type="text" placeholder="Digite seu usuário">
         <input type="password" placeholder="Digite sua senha">
-        <button type="submit">Acessar</button>
+        <button type="submit" id="btnform1">Acessar</button>
     </form>
     <hr>
-    <form action="">
+    <form class="form2">
         <fieldset>
             <legend>Tipos de Inputs:</legend>
             <p>Input de Texto: <input type="text"/></p>
@@ -133,7 +137,7 @@
     <!-- TABELAS -->
     <h4>Lista de Alunos</h4>
 
-    <table border="1">
+    <table>
         <tr>
             <td>Nome</td>
             <td>Idade</td>
@@ -148,7 +152,7 @@
 
     <!-- TABELA PERSONALIZADA -->
 
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>Nome</th>
